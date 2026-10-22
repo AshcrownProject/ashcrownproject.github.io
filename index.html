@@ -1,122 +1,158 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ashcrown Project | Official</title>
-<meta name="description" content="Enter the darkness. Discover Ashcrown Project — dark metal born from the ashes.">
-<style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: #090909;
-  color: #eee;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-header {
-  padding: 65px 20px 50px;
-  background: linear-gradient(180deg, #350606, #100707 65%, #090909);
-  border-bottom: 1px solid #651010;
-}
-h1 {
-  font-size: clamp(38px, 8vw, 76px);
-  letter-spacing: 5px;
-  color: #c51c2a;
-  text-shadow: 0 0 25px #8b0000;
-  margin: 15px 0;
-}
-.subtitle {
-  letter-spacing: 4px;
-  color: #aaa;
-  font-size: 13px;
-}
-nav { padding: 20px 10px; }
-nav a {
-  color: #ddd;
-  text-decoration: none;
-  margin: 0 12px;
-  font-size: 14px;
-}
-nav a:hover { color: #e32938; }
-section { padding: 45px 20px; }
-h2 {
-  color: #d12432;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-p {
-  color: #bbb;
-  line-height: 1.8;
-  max-width: 650px;
-  margin: 15px auto;
-}
-.button {
-  display: inline-block;
-  margin: 12px 5px;
-  padding: 14px 24px;
-  background: #9f101c;
-  color: white;
-  text-decoration: none;
-  border: 1px solid #e33a46;
-  border-radius: 3px;
-}
-.button:hover { background: #d21b2b; }
-.album {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 25px;
-  border: 1px solid #471016;
-  background: #110c0d;
-}
-footer {
-  padding: 25px;
-  color: #666;
-  border-top: 1px solid #301014;
-  font-size: 12px;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="Ashcrown Project — dark, melodic metal. Discover Into The Darkness and listen on SoundCloud.">
+  <title>Ashcrown Project — Official Site</title>
+  <style>
+    :root{--bg:#08080a;--panel:#111115;--red:#e12635;--muted:#b8b5bb;--gold:#d6a45b;--line:#2b2528}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:#f6f2f2;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:absolute;z-index:2;top:0;left:0;right:0;padding:18px 0;border-bottom:1px solid #ffffff18;background:linear-gradient(#08080acc,transparent)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-size:.95rem;font-weight:800;letter-spacing:.19em}
+    .brand span{color:var(--red)}
+    .navlinks{display:flex;gap:22px;font-size:.9rem;color:#eee}
+    .navlinks a:hover{color:#ff5964}
+    .hero{min-height:90vh;display:grid;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,#08080aee 0%,#08080a9c 48%,#08080a55 100%),linear-gradient(0deg,var(--bg),transparent 40%),url('images/into-the-darkness.jpeg') center 38%/cover}
+    .hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 70% 35%,#d7192b22,transparent 48%)}
+    .hero-content{position:relative;z-index:1;padding:130px 0 70px;max-width:720px}
+    .eyebrow{color:#ff6872;text-transform:uppercase;letter-spacing:.28em;font-size:.75rem;font-weight:700}
+    h1{font-size:clamp(2.7rem,8vw,6.2rem);line-height:.98;letter-spacing:.045em;margin:18px 0;text-transform:uppercase;text-shadow:0 5px 30px #000}
+    h1 span{display:block;color:var(--red)}
+    .hero p{max-width:560px;color:#e1dce0;font-size:clamp(1rem,2.2vw,1.2rem)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:5px;padding:13px 19px;font-weight:750;border:1px solid #ffffff38;transition:transform .2s,background .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--red);border-color:var(--red);color:white}
+    .btn-secondary{background:#0a090bb8}
+    section{padding:76px 0}
+    .section-head{margin-bottom:28px}
+    .section-head .eyebrow{font-size:.7rem}
+    h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.1;margin:8px 0 12px}
+    .section-head p{color:var(--muted);max-width:650px;margin:0}
+    .featured{display:grid;grid-template-columns:minmax(220px,.85fr) 1.15fr;gap:34px;align-items:center;background:linear-gradient(135deg,#181013,#0f0e11);border:1px solid var(--line);padding:clamp(18px,4vw,38px);border-radius:12px}
+    .featured img{width:100%;display:block;aspect-ratio:1;object-fit:cover;border-radius:5px;box-shadow:0 12px 40px #0009}
+    .featured h3{font-size:clamp(1.5rem,3vw,2.2rem);margin:0 0 8px}
+    .meta{color:var(--muted);font-size:.92rem}
+    .tracklist{list-style:none;padding:0;margin:22px 0}
+    .tracklist li{padding:10px 0;border-bottom:1px solid #ffffff13;display:flex;justify-content:space-between;gap:12px}
+    .tracklist time{color:#aaa;font-variant-numeric:tabular-nums;white-space:nowrap}
+    .albums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .album{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:9px}
+    .album img{display:block;width:100%;aspect-ratio:1;object-fit:cover;transition:transform .35s}
+    .album:hover img{transform:scale(1.025)}
+    .album-body{padding:18px}
+    .album h3{margin:0 0 4px;font-size:1.2rem}
+    .album .tracklist{margin:14px 0 18px;font-size:.93rem}
+    .album .tracklist li{display:block;padding:8px 0}
+    .album .tracklist time{display:block;font-size:.82rem}
+    .about{background:linear-gradient(120deg,#190b0e,#0c0b0e 70%);border-block:1px solid #38171c}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+    .about img{width:100%;max-height:430px;object-fit:cover;border-radius:8px;border:1px solid #3a3032}
+    .about p{color:#d4cdd1}
+    .contact{text-align:center}
+    .contact p{color:var(--muted);max-width:580px;margin:0 auto 24px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:#a9a3a8;font-size:.85rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .soundcloud{color:#ff7655}
+    @media(max-width:760px){
+      .navlinks{gap:12px;font-size:.8rem}
+      .brand{font-size:.78rem;letter-spacing:.1em}
+      .hero{min-height:82vh;background-position:58% center}
+      .hero-content{padding-top:125px}
+      .featured,.about-grid{grid-template-columns:1fr}
+      .featured img{max-width:420px;margin:auto}
+      .albums{grid-template-columns:1fr;gap:16px}
+      .album{display:grid;grid-template-columns:112px 1fr}
+      .album img{height:100%;min-height:112px;aspect-ratio:auto}
+      .album-body{padding:14px}
+      .album .tracklist{margin:10px 0}
+      section{padding:56px 0}
+    }
+    @media(max-width:390px){.navlinks{gap:8px}.navlinks a{font-size:.74rem}.brand{letter-spacing:.04em}}
+  </style>
 </head>
 <body>
 <header>
-  <div class="subtitle">DARKNESS • POWER • METAL</div>
-  <h1>ASHCROWN<br>PROJECT</h1>
-  <p>Born from the ashes. Forged in darkness.</p>
-  <a class="button" href="https://soundcloud.com/">LISTEN ON SOUNDCLOUD</a>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#top">ASHCROWN <span>PROJECT</span></a>
+      <div class="navlinks"><a href="#music">Music</a><a href="#about">About</a><a href="#listen">Listen</a></div>
+    </nav>
+  </div>
 </header>
-<nav>
-  <a href="#about">ABOUT</a>
-  <a href="#music">MUSIC</a>
-  <a href="#contact">FOLLOW</a>
-</nav>
-<section id="about">
-  <h2>Enter the darkness</h2>
-  <p>
-    Welcome to Ashcrown Project — a dark metal universe
-    built on heavy riffs, haunting melodies and the power
-    of the shadows. Step inside and discover the music.
-  </p>
-</section>
-<section id="music">
-  <h2>The music</h2>
-  <div class="album">
-    <h3>INTO THE DARKNESS</h3>
-    <p>Step beyond the light. Enter the unknown.</p>
-    <a class="button" href="https://soundcloud.com/">LISTEN NOW</a>
-  </div>
-  <div class="album">
-    <h3>CROWNED BY MISERY</h3>
-    <p>Darkness has a sound. This is its voice.</p>
-    <a class="button" href="https://soundcloud.com/">LISTEN NOW</a>
-  </div>
-</section>
-<section id="contact">
-  <h2>Follow the darkness</h2>
-  <p>Follow Ashcrown Project for new music and releases.</p>
-  <a class="button" href="https://soundcloud.com/">SOUNDCLOUD</a>
-</section>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-content">
+        <div class="eyebrow">Independent Metal Project · 2026</div>
+        <h1>Ashcrown <span>Project</span></h1>
+        <p>Dark worlds, powerful crowns, and melodies born in the shadows. Discover Into The Darkness by Ashcrown Project.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://on.soundcloud.com/8dJslg729QSRmFyfan" target="_blank" rel="noopener">▶ Listen on SoundCloud</a>
+          <a class="btn btn-secondary" href="#music">Explore the Music ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="music">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Featured Release</div>
+        <h2>Into The Darkness</h2>
+        <p>Blood-red skies, dark ruins, and three tracks that take you into the world of Ashcrown Project.</p>
+      </div>
+      <div class="featured">
+        <img src="images/into-the-darkness.jpeg" alt="Into The Darkness cover art featuring a blood-red eclipse and dark crown">
+        <div>
+          <h3>Into The Darkness</h3>
+          <div class="meta">EP · 2026 · 3 tracks · 13:18</div>
+          <ol class="tracklist">
+            <li><span>Kingdom of Ashes</span><time>4:07</time></li>
+            <li><span>Into The Darkness</span><time>5:12</time></li>
+            <li><span>Crowned by Misery</span><time>—</time></li>
+          </ol>
+          <a class="btn btn-primary" href="https://on.soundcloud.com/8dJslg729QSRmFyfan" target="_blank" rel="noopener">Listen on SoundCloud ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">Bakom kronan</div>
+        <h2>Welcome to the Darkness.</h2>
+        <p>Ashcrown Project is an independent music project with a dramatic, dark, and cinematic atmosphere. Stormy landscapes, royal symbols, and songs with stories of their own come together here.</p>
+        <p>Into The Darkness opens the door to the world of Ashcrown Project.</p>
+      </div>
+      <img src="images/ashcrown-project-logo.jpeg" alt="Ashcrown Project-logotyp över ett dramatiskt landskap">
+    </div>
+  </section>
+
+  <section class="contact" id="listen">
+    <div class="wrap">
+      <div class="eyebrow">Keep Listening</div>
+      <h2>Find Ashcrown Project on SoundCloud</h2>
+      <p>Visit the artist profile to listen to the music and discover the latest releases.</p>
+      <a class="btn btn-primary" href="https://on.soundcloud.com/8dJslg729QSRmFyfan" target="_blank" rel="noopener">Open SoundCloud ↗</a>
+    </div>
+  </section>
+</main>
 <footer>
-  © 2026 ASHCROWN PROJECT • ALL RIGHTS RESERVED
+  <div class="wrap footer-inner">
+    <span>© 2026 Ashcrown Project</span>
+    <span>Built for the shadows. Made for the sound.</span>
+  </div>
 </footer>
 </body>
 </html>
